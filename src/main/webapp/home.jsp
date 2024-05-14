@@ -42,7 +42,8 @@
             flex: 0 0 calc(25% - 32px); /* Four cards in a row, considering margin */
             max-width: calc(25% - 32px);
             width: fit-content;
-            height: 300px;
+            height: fit-content;
+            min-height: 350px;
             border: 1px solid #ccc;
             border-radius: 8px;
             padding: 16px;
@@ -69,11 +70,11 @@
 <body>
 <div class="navbar">
     <div class="logo">
-        <a href="http://localhost:8080/home.jsp"><img src="images/logo.png" alt="logo"></a>
+        <a href="http://localhost:8080/home"><img src="images/logo.png" alt="logo"></a>
         MovieDB
     </div>
     <div class="navlinks">
-        <a href="register.jsp">Register</a>
+        <a href="movie_register.jsp">Movie Register</a>
     </div>
 </div>
 

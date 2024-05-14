@@ -23,7 +23,7 @@
             MovieDB
         </div>
         <div class="navlinks">
-            <a href="login.jsp">Sign in</a>
+            <a href="login">Sign in</a>
         </div>
     </div>
     <div class="loginform">

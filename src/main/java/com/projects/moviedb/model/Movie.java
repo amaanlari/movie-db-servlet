@@ -1,16 +1,16 @@
 package com.projects.moviedb.model;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Movie {
 
     int id;
     String title;
     String overview;
-    Date release_date;
+    LocalDate release_date;
     int runtime;
 
-    public Movie(int id, String title, String overview, Date release_date, int runtime) {
+    public Movie(int id, String title, String overview, LocalDate release_date, int runtime) {
         this.id = id;
         this.title = title;
         this.overview = overview;
@@ -42,11 +42,11 @@ public class Movie {
         this.overview = overview;
     }
 
-    public Date getRelease_date() {
+    public LocalDate getRelease_date() {
         return release_date;
     }
 
-    public void setRelease_date(Date release_date) {
+    public void setRelease_date(LocalDate release_date) {
         this.release_date = release_date;
     }
 

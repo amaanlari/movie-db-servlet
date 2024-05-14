@@ -17,7 +17,7 @@ public class HomeServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         // Get the data from database.
-        List<Movie> movieList = new ArrayList<>();
+        List<Movie> movieList;
         try {
             movieList = MovieDao.findMovies();
         } catch (SQLException | ClassNotFoundException e) {
