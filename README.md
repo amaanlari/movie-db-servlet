@@ -44,7 +44,7 @@ Welcome to the Movie Database Website project! This project is built using Java 
 
 1. **Clone the repository:**
     ```sh
-    git clone https://github.com/your-username/movie-db-website.git
+    git clone https://github.com/amaanlari/movie-db-website.git
     ```
 2. **Import the project into your IDE.**
 3. **Configure the MySQL database:**
