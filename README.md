@@ -44,17 +44,17 @@ Welcome to the Movie Database Website project! This project is built using Java 
 
 1. **Clone the repository:**
     ```sh
-    git clone https://github.com/amaanlari/movie-db-website.git
+    git clone https://github.com/amaanlari/movie-db-servlet.git
     ```
-2. **Import the project into your IDE.**
-3. **Configure the MySQL database:**
+3. **Import the project into your IDE.**
+4. **Configure the MySQL database:**
     - Create a new database in MySQL.
     - Execute the SQL script provided in the `db` folder to create the required tables.
-4. **Update the database configuration in the project:**
+5. **Update the database configuration in the project:**
     - Open `db.properties` file.
     - Update the database URL, username, and password according to your MySQL setup.
 
-5. **Deploy the project on Apache Tomcat:**
+6. **Deploy the project on Apache Tomcat:**
     - Add the project to the Tomcat server in your IDE.
     - Start the Tomcat server.
 
