@@ -1,0 +1,8 @@
+FROM mysql:latest
+
+# Set environment variables for MySQL
+ENV MYSQL_DATABASE=movie_db
+ENV MYSQL_ROOT_PASSWORD='mysql@121'
+
+# Expose port 3306
+EXPOSE 3306
