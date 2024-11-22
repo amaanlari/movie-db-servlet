@@ -10,6 +10,12 @@ services:
       - db
     networks:
       - app_network
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8080/moviedb/health" ]
+      interval: 10s
+      retries: 3
+      start_period: 30s
+      timeout: 5s
 
   db:
     build:
@@ -24,6 +30,12 @@ services:
       - db_data:/var/lib/mysql
     networks:
       - app_network
+    healthcheck:
+      test: [ "CMD", "mysqladmin", "ping", "--host=localhost", "--user=root", "--password=mysql@121" ]
+      interval: 10s
+      retries: 5
+      start_period: 30s
+      timeout: 10s
 
 volumes:
   db_data:
